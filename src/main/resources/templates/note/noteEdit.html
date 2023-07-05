@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/styles/note/noteEdit.css}" rel="stylesheet" />
+</head>
+<body>
+<div class="divButton">
+    <form action="#" th:action="@{/note/edit}" th:object="${dtoNote}" method="post">
+        <p>Note #:  <input type="text" th:value="${dtoNote.id}" id="id" name="id"/></p>
+        <p>Title:   <input type="text" th:value="${dtoNote.title}" id="title" name="title"/></p>
+        <p>Content: <input type="text" th:value="${dtoNote.content}" id="content" name="content"/></p>
+        <input class="editButton" type="submit" value="SAVE" />
+    </form>
+</div>
+</body>
+</html>

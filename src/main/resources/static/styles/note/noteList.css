@@ -1,0 +1,85 @@
+body {
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+background-color: #282c34;
+color: white;
+text-align: center;
+}
+
+div{
+padding: 10px;
+}
+
+.total {
+font-size: xxx-large;
+text-align: left;
+margin: auto;
+width: 100%;
+padding: 10px;
+}
+.divTitle{
+padding: 0px;
+text-align: left;
+font-weight: bold;
+border-radius: 5px;
+}
+.divContent{
+padding: 10px 0px 0px 0px;
+text-align: left;
+border-radius: 5px;
+}
+
+.divNote{
+float: left;
+display: block;
+width: 80%;
+height:80pt;
+padding: 4pt;
+text-align: left;
+background-color: #2AACB8;
+border-radius: 5px;
+}
+
+.divButton{
+float: left;
+display: block;
+padding: 0px 0px 0px 10px;
+}
+.divSpace{
+height:80pt;
+}
+
+.deleteButton{
+background-color: #C94F4F;
+border-style: none;
+border-width: 2px;
+border-color: #FFFFFF;
+color: #FFFFFF;
+font-weight: bold;
+height:25pt;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.editButton{
+background-color: #599E5E;
+border-style: none;
+border-width: 2px;
+border-color: #FFFFFF;
+color: #FFFFFF;
+font-weight: bold;
+height:25pt;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+img.logo{
+width: 250px;
+height: auto;
+border-radius: 50%;
+}
