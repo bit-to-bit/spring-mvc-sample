@@ -2,16 +2,28 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link th:href="@{/styles/note/noteEdit.css}" rel="stylesheet" />
+    <title>Edit Note</title>
+    <link th:href="@{/styles/note/noteEdit.css}" rel="stylesheet"/>
 </head>
 <body>
 <div class="divButton">
     <form action="#" th:action="@{/note/edit}" th:object="${dtoNote}" method="post">
-        <p>Note #:  <input type="text" th:value="${dtoNote.id}" id="id" name="id"/></p>
-        <p>Title:   <input type="text" th:value="${dtoNote.title}" id="title" name="title"/></p>
-        <p>Content: <input type="text" th:value="${dtoNote.content}" id="content" name="content"/></p>
-        <input class="editButton" type="submit" value="SAVE" />
+        <div><h1 class="total">Edit Your Note:</h1></div>
+        <div class="flex">
+            <input type="hidden" th:value="${dtoNote.id}" id="id" name="id"/>
+        </div>
+        <div class="flex">
+            <p><label for="title">TITLE :</label></p>
+            <textarea rows="2" cols="200" th:text="${dtoNote.title}" id="title" name="title"></textarea>
+        </div>
+        <div class="flex">
+            <p><label for="content">CONTENT :</label></p>
+            <textarea rows="10" cols="200" th:text="${dtoNote.content}" id="content" name="content"></textarea>
+        </div>
+        <div>
+            <input class="editButton" type="submit" value="SAVE"/>
+        </div>
+
     </form>
 </div>
 </body>

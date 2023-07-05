@@ -7,11 +7,33 @@ sans-serif;
 -moz-osx-font-smoothing: grayscale;
 background-color: #282c34;
 color: white;
-text-align: center;
+text-align: left;
 }
 
 div{
 padding: 10px;
+}
+label{
+font-size: large;
+font-weight: bold;
+padding: 20px;
+}
+
+textarea
+{
+ width: 80%;
+font-size: large;
+background-color: #2AACB8;
+border-radius: 5px;
+color: white;
+padding: 20px;
+weight: 100%;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
 }
 
 .total {
@@ -21,36 +43,11 @@ margin: auto;
 width: 100%;
 padding: 10px;
 }
-.divTitle{
-padding: 0px;
-text-align: left;
-font-weight: bold;
-border-radius: 5px;
-}
-.divContent{
-padding: 10px 0px 0px 0px;
-text-align: left;
-border-radius: 5px;
-}
-
-.divNote{
-float: left;
-display: block;
-width: 80%;
-height:80pt;
-padding: 4pt;
-text-align: left;
-background-color: #2AACB8;
-border-radius: 5px;
-}
 
 .divButton{
 float: left;
 display: block;
 padding: 0px 0px 0px 10px;
-}
-.divSpace{
-height:80pt;
 }
 
 .deleteButton{
@@ -75,11 +72,4 @@ font-weight: bold;
 height:25pt;
 border-radius: 5px;
 cursor: pointer;
-}
-
-
-img.logo{
-width: 250px;
-height: auto;
-border-radius: 50%;
 }

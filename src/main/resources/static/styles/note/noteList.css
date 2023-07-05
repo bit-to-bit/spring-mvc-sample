@@ -14,6 +14,15 @@ div{
 padding: 10px;
 }
 
+li {
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+ul {
+padding: 0px;
+}
+
 .total {
 font-size: xxx-large;
 text-align: left;
@@ -21,24 +30,22 @@ margin: auto;
 width: 100%;
 padding: 10px;
 }
-.divTitle{
-padding: 0px;
-text-align: left;
+
+
+.noteTitle {
 font-weight: bold;
-border-radius: 5px;
 }
-.divContent{
-padding: 10px 0px 0px 0px;
-text-align: left;
-border-radius: 5px;
+.noteContent {
+
 }
 
 .divNote{
 float: left;
 display: block;
 width: 80%;
-height:80pt;
-padding: 4pt;
+margin-top: 20px;
+height:auto;
+padding: 8px;
 text-align: left;
 background-color: #2AACB8;
 border-radius: 5px;
@@ -46,11 +53,9 @@ border-radius: 5px;
 
 .divButton{
 float: left;
+margin-top: 20px;
 display: block;
 padding: 0px 0px 0px 10px;
-}
-.divSpace{
-height:80pt;
 }
 
 .deleteButton{
@@ -75,11 +80,4 @@ font-weight: bold;
 height:25pt;
 border-radius: 5px;
 cursor: pointer;
-}
-
-
-img.logo{
-width: 250px;
-height: auto;
-border-radius: 50%;
 }

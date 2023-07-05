@@ -31,10 +31,10 @@ NoteService noteService;
     }
 
     @GetMapping("/edit")
-    public ModelAndView getEditNoteForm(@ModelAttribute Note dtoNote, Model model){
+    public ModelAndView getEditNoteForm(@RequestParam(name = "id") long id, Model model){
         ModelAndView result = new ModelAndView("note/noteEdit");
         try {
-            result.addObject("dtoNote",noteService.getById(dtoNote.getId()));
+            result.addObject("dtoNote",noteService.getById(id));
         } catch (NoteServiceException e) {
             throw new RuntimeException(e);
         }

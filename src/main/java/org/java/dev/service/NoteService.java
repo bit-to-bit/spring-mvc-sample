@@ -59,7 +59,7 @@ public class NoteService {
     }
 
     public void generateNotes(int numberOfNotes) {
-        for (int i = 0; i < numberOfNotes; i++) {
+        for (int i = 1; i <= numberOfNotes; i++) {
             String contentPhrase = "The quick brown fox jumps over the lazy dog... ";
             try {
                 this.add(new Note(null, "Note " + i, StringUtils.repeat(contentPhrase, i)));
